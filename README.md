@@ -17,12 +17,15 @@ Implement the following classes:
   University: Represents the combination of courses, instructors, and time slots
   
 Each class should have appropriate attributes and methods to manage the relationships.
-Attributes:
+## Attributes:
   TimeSlot: day (string), startTime (string), endTime (string)
+  
   Course: courseName (string), preferredTimeSlots (list of TimeSlot objects)
+  
   Instructor: name (string), availability (list of TimeSlot objects), preferredCourses (list of Course objects)
+  
   University: courses (list of Course objects), instructors (list of Instructor objects), timeSlots (list of TimeSlot objects)
-Methods:
+## Methods:
   TimeSlot:
     displayInfo: print time slot information
   Course:
