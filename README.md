@@ -4,12 +4,18 @@
 Assignment: University Timetabling System
 This assignment aims to design and implement a program that schedules courses for a university while assigning instructors to each course based on their availability and expertise. This will involve creating classes to represent courses and instructors, as well as implementing an algorithm to schedule a timetable. Exact, heuristic, or hybrid methods can be used for scheduling. The solution should be as optimal as possible. Incomplete solutions are also acceptable.
 
-##Class Structure:
+## Class Structure:
+
 Implement the following classes:
+
   TimeSlot: Represents a time slot for scheduling courses
+  
   Course: Represents a course that needs to be scheduled
+  
   Instructor: Represents an instructor who can teach courses and has specific availability
+  
   University: Represents the combination of courses, instructors, and time slots
+  
 Each class should have appropriate attributes and methods to manage the relationships.
 Attributes:
   TimeSlot: day (string), startTime (string), endTime (string)
