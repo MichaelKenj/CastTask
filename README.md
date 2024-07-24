@@ -27,26 +27,30 @@ Each class should have appropriate attributes and methods to manage the relation
   University: courses (list of Course objects), instructors (list of Instructor objects), timeSlots (list of TimeSlot objects)
 ## Methods:
   TimeSlot:
+  
     displayInfo: print time slot information
   Course:
+  
     displayInfo: print course information
   Instructor:
+    
     displayInfo: print instructor information
   University:
+    
     addCourse: add a course to the university object
     addInstructor: add an instructor to the university object
     addTimeSlot: add a time slot to the university object
     saveState: save the state of the university in the file with a JSON format
     loadState: load the state of the university from the file with a JSON format
     schedule: return a correct scheduled timetable
-Scheduling Constraints:
+## Scheduling Constraints:
 The scheduling algorithm must satisfy all hard constraints and as many soft constraints as possible.
 Hard constraints:
     Each course must be scheduled exactly once in an available time slot and assigned to an instructor
     An instructor can only be assigned to a course if they are available during the corresponding time slot
     An instructor cannot be scheduled to teach more than one course in the same time slot
 
-Soft constraints:
+## Soft constraints:
 Courses should be scheduled in preferred time slots if possible
 Instructors should be assigned to their preferred courses if possible 
 Testing:
